@@ -30,3 +30,4 @@ C:\Users\akifc\Vscode Projects\fullstack-ecommerce\API\obj\Debug\net8.0\refint\A
 C:\Users\akifc\Vscode Projects\fullstack-ecommerce\API\obj\Debug\net8.0\API.pdb
 C:\Users\akifc\Vscode Projects\fullstack-ecommerce\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\akifc\Vscode Projects\fullstack-ecommerce\API\obj\Debug\net8.0\ref\API.dll
+C:\Users\akifc\Vscode Projects\fullstack-ecommerce\API\obj\Debug\net8.0\API.sourcelink.json
