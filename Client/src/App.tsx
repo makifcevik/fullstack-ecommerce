@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { IProduct } from "./models/IProduct";
 import ProductList from "./components/ProductList";
+import ButtonUsage from "./components/ButtonUsage";
 
 function App() {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -12,7 +13,12 @@ function App() {
       .then((data) => setProducts(data));
   }, []);
 
-  return <ProductList products={products} />;
+  return (
+    <>
+      <ProductList products={products} />
+      <ButtonUsage />
+    </>
+  );
 }
 
 export default App;
