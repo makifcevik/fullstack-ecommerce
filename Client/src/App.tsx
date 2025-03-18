@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { IProduct } from "./models/IProduct";
 import ProductList from "./components/ProductList";
-import ButtonUsage from "./components/ButtonUsage";
+import Navbar from "./components/Navbar";
+import { Container, CssBaseline } from "@mui/material";
 
 function App() {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -15,8 +16,11 @@ function App() {
 
   return (
     <>
-      <ProductList products={products} />
-      <ButtonUsage />
+      <CssBaseline />
+      <Navbar />
+      <Container>
+        <ProductList products={products} />
+      </Container>
     </>
   );
 }
