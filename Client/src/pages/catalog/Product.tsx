@@ -6,7 +6,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import { IProduct } from "../models/IProduct";
+import { IProduct } from "../../models/IProduct";
 import { AddShoppingCart, Search } from "@mui/icons-material";
 
 interface Props {
