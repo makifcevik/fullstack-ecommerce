@@ -27,7 +27,7 @@ function Product({ product }: Props) {
           {product.name}
         </Typography>
         <Typography variant='body2' color='secondary'>
-          {(product.price / 100).toFixed(2)} ₺
+          {product.price} ₺
         </Typography>
       </CardContent>
       <CardActions>
