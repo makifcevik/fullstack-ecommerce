@@ -8,6 +8,8 @@ import {
 } from "@mui/material";
 import { IProduct } from "../../models/IProduct";
 import { AddShoppingCart, Search } from "@mui/icons-material";
+import { Link } from "react-router";
+import { PATHS } from "../../router/Routes";
 
 interface Props {
   product: IProduct;
@@ -37,7 +39,13 @@ function Product({ product }: Props) {
         >
           Add to cart
         </Button>
-        <Button variant='outlined' size='small' startIcon={<Search />}>
+        <Button
+          component={Link}
+          to={PATHS.PRODUCT_DETAILS(product.id)}
+          variant='outlined'
+          size='small'
+          startIcon={<Search />}
+        >
           View
         </Button>
       </CardActions>
